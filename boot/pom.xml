@@ -17,14 +17,12 @@
           <groupId>org.springframework.boot</groupId>  
           <artifactId>spring-boot-starter-web</artifactId>  
        </dependency>
-       
-       <!-- spring jpa begin -->
+     <!-- spring jpa begin -->
        <dependency>  
        	<groupId>mysql</groupId>  
        	<artifactId>mysql-connector-java</artifactId>  
 	  </dependency> 
-      <!-- spring jpa end -->
-         
+      <!-- spring jpa end -->   
 </dependencies>  
   
   <build>  
