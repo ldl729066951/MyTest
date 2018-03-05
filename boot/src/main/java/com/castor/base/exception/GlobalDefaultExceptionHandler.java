@@ -4,11 +4,13 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @ControllerAdvice
 public class GlobalDefaultExceptionHandler {
 
 	@ExceptionHandler(value = Exception.class)
+	@ResponseBody
 	public void defaultErrorHandler(HttpServletRequest req, Exception e) {
 //      // If the exception is annotated with @ResponseStatus rethrow it and let
 //      // the framework handle it - like the OrderNotFoundException example
@@ -35,7 +37,10 @@ public class GlobalDefaultExceptionHandler {
         * 那么需要在方法上加上注解：@ResponseBody
         * 添加return即可。
         */
-
+     //Object
+     //return "404";
+       
+       
        /*
         * 返回视图：
         * 定义一个ModelAndView即可，
