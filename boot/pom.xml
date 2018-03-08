@@ -41,6 +41,13 @@
          <version>1.2.15</version>  
   	  </dependency> 
   	  
+  	  <!-- 配置 druid 数据库连接池 -->
+  	   <dependency>
+ 			<groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.18</version>
+		</dependency>
+		
    </dependencies>  
   
   <build>  
