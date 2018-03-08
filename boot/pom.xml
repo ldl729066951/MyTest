@@ -80,6 +80,15 @@
                  </execution>   
                </executions>  
 			</plugin> 
+			<!-- Spring Boot在编译的时候，是有默认JDK版本的, 下面的配置让项目使用我们要的JDK版本
+				右键Maven à Update Projects,这时候你可以看到工程根目录下的JRE System Library 版本更改了-->
+			<plugin>
+ 				<artifactId>maven-compiler-plugin</artifactId>
+   				<configuration>
+ 					<source>1.8</source>
+ 					<target>1.8</target>
+ 				</configuration>
+			</plugin>
        </plugins>  
 </build>  
   
